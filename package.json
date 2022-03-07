@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "antd": "^4.18.6",
+    "concurrently": "^7.0.0",
+    "http": "^0.0.1-security",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.0",
+    "websocket": "^1.0.34"
+  },
+  "name": "websocket",
+  "version": "1.0.0",
+  "description": "web-socket",
+  "main": "index.js",
+  "scripts": {
+    "start": "node webSocket/index.js",
+    "server": "nodemon webSocket",
+    "client": "npm start --prefix websocket-client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "gokul raj",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
